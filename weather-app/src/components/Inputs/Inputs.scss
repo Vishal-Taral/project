@@ -1,15 +1,51 @@
-.Inputs{
-    .input-box{
-        width: 80%;
-        min-height: 5vh;
-        border: 2px solid black;
-        border-radius: 7px;
-        font-size: 22px;
+$color: black;
+.weather-app {
+  .Inputs {
+    display: flex;
+    justify-content: center;
+    .input-box {
+      width: 80%;
+      // min-height: 5vh;
+      border: 2px solid $color;
+      border-radius: 7px;
+      font-size: 22px;
+    }
+    .search-btn {
+      background-color: tomato;
+      border-radius: 4px;
+      margin-left: 0.3rem;
+    }
+  }
+  .weather-info {
+    margin-top: 2%;
+    .place-info {
+      font-size: 30px;
 
+      .cityName{
+        font-size: 40px;
+        display: block;
+        
+      }
+      
     }
-    .search-btn{
-        background-color: tomato;
-        border-radius: 4px;
-        padding-top: 0.4rem;
+    .outer{
+      display: flex;
+      justify-content: space-between;
+      .img-and-temp{
+      display: flex;
+
+      .cloud_img{
+        width: 15rem;
+        height: 15rem;
+      }
+
+      .temp{
+        margin-top: 3rem;
+      }
     }
+    }
+    .wind-info{
+      margin-top: 3rem;
+    }
+  }
 }

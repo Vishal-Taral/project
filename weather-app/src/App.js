@@ -3,7 +3,7 @@ import Inputs from './components/Inputs/Inputs';
 function App() {
   return (
     <div className="App container">
-      <h1>Weather App</h1>
+      <h1 className='heading'>Weather App</h1>
       <Inputs />
 
     </div>

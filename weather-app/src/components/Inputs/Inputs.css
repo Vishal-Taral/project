@@ -1,12 +1,42 @@
-.Inputs .input-box {
+.weather-app .Inputs {
+  display: flex;
+  justify-content: center;
+}
+.weather-app .Inputs .input-box {
   width: 80%;
-  min-height: 5vh;
   border: 2px solid black;
   border-radius: 7px;
   font-size: 22px;
 }
-.Inputs .search-btn {
+.weather-app .Inputs .search-btn {
   background-color: tomato;
   border-radius: 4px;
-  padding-top: 0.4rem;
+  margin-left: 0.3rem;
+}
+.weather-app .weather-info {
+  margin-top: 2%;
+}
+.weather-app .weather-info .place-info {
+  font-size: 30px;
+}
+.weather-app .weather-info .place-info .cityName {
+  font-size: 40px;
+  display: block;
+}
+.weather-app .weather-info .outer {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app .weather-info .outer .img-and-temp {
+  display: flex;
+}
+.weather-app .weather-info .outer .img-and-temp .cloud_img {
+  width: 15rem;
+  height: 15rem;
+}
+.weather-app .weather-info .outer .img-and-temp .temp {
+  margin-top: 3rem;
+}
+.weather-app .weather-info .wind-info {
+  margin-top: 3rem;
 }/*# sourceMappingURL=Inputs.css.map */
