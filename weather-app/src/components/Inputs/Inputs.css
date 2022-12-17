@@ -33,10 +33,25 @@
 .weather-app .weather-info .outer .img-and-temp .cloud_img {
   width: 15rem;
   height: 15rem;
+  border-radius: 50%;
 }
 .weather-app .weather-info .outer .img-and-temp .temp {
   margin-top: 3rem;
+  margin-left: 1rem;
 }
 .weather-app .weather-info .wind-info {
   margin-top: 3rem;
+}
+
+@media only screen and (max-width: 791px) {
+  .outer {
+    display: flex;
+    flex-direction: column;
+  }
+  .outer .img-and-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=Inputs.css.map */

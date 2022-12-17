@@ -1,23 +1,8 @@
-$color: black;
-.weather-app {
-  .Inputs {
-    display: flex;
-    justify-content: center;
-    .input-box {
-      width: 80%;
-      // min-height: 5vh;
-      border: 2px solid $color;
-      border-radius: 7px;
-      font-size: 22px;
-    }
-    .search-btn {
-      background-color: tomato;
-      border-radius: 4px;
-      margin-left: 0.3rem;
-    }
-  }
-  .weather-info {
+.weather-info {
     margin-top: 2%;
+    border: 2px dotted black;
+    border-radius: 20px;
+    padding: 2rem;
     .place-info {
       font-size: 30px;
 
@@ -35,7 +20,7 @@ $color: black;
         .cloud_img {
           width: 15rem;
           height: 15rem;
-          // border: 1px solid black;
+          border: 1px solid rgb(190, 30, 30);
           border-radius: 50%;
         }
 
@@ -49,7 +34,7 @@ $color: black;
       margin-top: 3rem;
     }
   }
-}
+
 
 // @media only screen and (max-width: 480px) {
 //   .outer {

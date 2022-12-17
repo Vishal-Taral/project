@@ -1,10 +1,10 @@
 import './App.css';
-import Inputs from './components/Inputs/Inputs';
+import Information from './components/Information/Information';
 function App() {
   return (
     <div className="App container">
       <h1 className='heading'>Weather App</h1>
-      <Inputs />
+      <Information />
 
     </div>
   );
