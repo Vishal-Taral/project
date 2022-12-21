@@ -1,27 +1,25 @@
 import "./Inputs.scss";
-import { useState } from "react";
+// import { useState } from "react";
+
 
 const Inputs = (props) => {
-  const [enteredCity, setEnteredCity] = useState("");
-
-  const changeHandler = (e) => {
-    setEnteredCity(e.target.value);
-    // setEnteredCity(e.target.value);
-  };
-
-  const searchHandeler = () => {
-    props.getApiData(enteredCity);
-    setEnteredCity("");
-  };
-
+  // const [list, setList] = useState([]);
+  console.log(list);
+  const changeCountry = () => {
+      setList(props.response);
+  }
   
 
   return (
     <div className="weather-app">
-      <div className="Inputs ">
-        <input type="text" className="input-box" onChange={changeHandler} />
-
-        <button className="search-btn" onClick={searchHandeler}>
+      
+      <div>
+      {/* <select className="dropdown-box" onChange={changeCountry}>{list.map((countryList) => {
+          return(
+              <option value={countryList}>{countryList}</option>
+          )
+        })}</select> */}
+        <button className="ml-4">
           Search
         </button>
       </div>

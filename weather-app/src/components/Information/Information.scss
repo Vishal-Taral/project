@@ -1,65 +1,8 @@
-.weather-info {
-    margin-top: 2%;
-    border: 2px dotted black;
-    border-radius: 20px;
-    padding: 2rem;
-    .place-info {
-      font-size: 30px;
 
-      .cityName {
-        font-size: 40px;
-        display: block;
-      }
-    }
-    .outer {
-      display: flex;
-      justify-content: space-between;
-      .img-and-temp {
-        display: flex;
-
-        .cloud_img {
-          width: 15rem;
-          height: 15rem;
-          border: 1px solid rgb(190, 30, 30);
-          border-radius: 50%;
-        }
-
-        .temp {
-          margin-top: 3rem;
-          margin-left: 1rem;
-        }
-      }
-    }
-    .wind-info {
-      margin-top: 3rem;
-    }
-  }
-
-
-// @media only screen and (max-width: 480px) {
-//   .outer {
-//     display: flex;
-//     flex-direction: column;
-
-//     .img-and-temp {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       align-items: center;
-//     }
-//   }
-// }
-
-@media only screen and (max-width: 791px) {
-  .outer {
-    display: flex;
-    flex-direction: column;
-
-    .img-and-temp {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+.weather-info{
+  display: flex;
+  justify-content: center;
+  .dropdown-box{
+    width: 200px;
   }
 }
