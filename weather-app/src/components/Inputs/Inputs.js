@@ -4,10 +4,10 @@ import "./Inputs.scss";
 
 const Inputs = (props) => {
   // const [list, setList] = useState([]);
-  console.log(list);
-  const changeCountry = () => {
-      setList(props.response);
-  }
+  // console.log(list);
+  // const changeCountry = () => {
+  //     setList(props.response);
+  // }
   
 
   return (

@@ -8,13 +8,13 @@ const Information = () => {
   const [countryList, setCountryList] = useState([]);
   const [stateList, setStateList] = useState([]);
 
-  const baseURL = "http://localhost:8000/data1";
+  const baseURL = "http://localhost:8000/countries";
 
   const getJsonData = () => {
     axios
       .get(baseURL)
       .then((response) => {
-        const jsonResponse = response.data.countries;
+        const jsonResponse = response.data;
         setCountryList(jsonResponse);
       })
       .catch((error) => {
@@ -27,9 +27,7 @@ const Information = () => {
   }, []);
 
   const changeCountry = (event) => {
-    const selectedCountry = countryList.find(
-      (c) => c.country === event.target.value
-    );
+    const selectedCountry = countryList.find((c) => c.country === event.target.value);
 
     console.log("selectedCountry =>", selectedCountry);
     setStateList(selectedCountry.states);
@@ -39,21 +37,23 @@ const Information = () => {
     <option key={key}>{country.country}</option>
   ));
   console.log("state", stateList);
-  // const states = stateList.map((state,key) => <option key={key}>{state}</option>);
+  const states = stateList.map((state,key) => <option key={key}>{state}</option>);
   return (
     <div className="weather-info">
-      <div>
+      <div className="select">
+        <label htmlFor="">Select Country</label>
         <select className="dropdown-box" onChange={changeCountry}>
           {stateOptions}
         </select>
       </div>
 
-      <div>
+      <div className="select">
+      <label htmlFor="">Select State</label>
         <select className="dropdown-box ml-3">
-          {/* {states} */}
-          {stateList.map((s) => (
+          {states}
+          {/* {stateList.map((s) => (
             <option>{s}</option>
-          ))}
+          ))} */}
         </select>
       </div>
 
